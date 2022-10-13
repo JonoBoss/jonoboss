@@ -14,8 +14,6 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
-  // const helsinkiTime = new Date().toLocaleTimeString('fi-FI', { timeZone: 'Europe/Helsinki' });
-  // console.log(helsinkiTime.split('.')[0]);
   console.log('Ready!');
 });
 

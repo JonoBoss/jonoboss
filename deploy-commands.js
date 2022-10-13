@@ -4,7 +4,7 @@ require('dotenv').config();
 const { DISCORD_TOKEN, clientId, guildId } = process.env;
 
 const commands = [
-  new SlashCommandBuilder().setName('jono').setDescription('Anna tulla hyvä jono älä tule paha jono'),
+  new SlashCommandBuilder().setName('jono').setDescription('Gehennas jonon tilanne'),
 ]
   .map((command) => command.toJSON());
 
