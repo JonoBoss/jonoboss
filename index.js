@@ -1,7 +1,4 @@
 // Require the necessary discord.js classes
-import tonni from './img/tonni.webp';
-import kontsa from './img/kontsa.webp';
-
 const axios = require('axios');
 const jsdom = require('jsdom');
 const moment = require('moment');
@@ -11,6 +8,9 @@ const {
   Client, GatewayIntentBits, EmbedBuilder,
 } = require('discord.js');
 require('dotenv').config();
+
+const tonni = require('./img/tonni.webp');
+const kontsa = require('./img/kontsa.webp');
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
