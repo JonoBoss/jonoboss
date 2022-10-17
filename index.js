@@ -1,4 +1,7 @@
 // Require the necessary discord.js classes
+import tonni from './img/tonni.webp';
+import kontsa from './img/kontsa.webp';
+
 const axios = require('axios');
 const jsdom = require('jsdom');
 const moment = require('moment');
@@ -39,7 +42,7 @@ client.on('interactionCreate', async (interaction) => {
 
         const exampleEmbed = new EmbedBuilder()
           .setColor(bgColor)
-          .setAuthor({ name: 'Gehennas jono', iconURL: 'https://cdn0.iconfinder.com/data/icons/interface-icons-rounded/110/Skull-512.png' })
+          .setAuthor({ name: 'Gehennas jono', iconURL: queueTime === '0' ? tonni : kontsa })
           .addFields(
             { name: 'Queue size:', value: queueSize },
             { name: 'Estimated time:', value: `${queueTime} minutes` },
