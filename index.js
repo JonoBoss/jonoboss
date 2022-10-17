@@ -42,7 +42,8 @@ client.on('interactionCreate', async (interaction) => {
 
         const exampleEmbed = new EmbedBuilder()
           .setColor(bgColor)
-          .setAuthor({ name: 'Gehennas jono', iconURL: queueTime === '0' ? tonni : kontsa })
+          .setTitle('Gehennas jono')
+          .setThumbnail(queueTime === '0' ? tonni : kontsa)
           .addFields(
             { name: 'Queue size:', value: queueSize },
             { name: 'Estimated time:', value: `${queueTime} minutes` },
