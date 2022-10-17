@@ -9,8 +9,8 @@ const {
 } = require('discord.js');
 require('dotenv').config();
 
-const tonni = require('./img/tonni.webp');
-const kontsa = require('./img/kontsa.webp');
+const tonni = 'https://raw.githubusercontent.com/JonoBoss/jonoboss/main/img/tonni.webp';
+const kontsa = 'https://raw.githubusercontent.com/JonoBoss/jonoboss/main/img/kontsa.webp';
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
